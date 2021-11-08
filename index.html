@@ -1,0 +1,210 @@
+<html>
+  <head>
+     <title>Personal website</title>
+     <style> 
+.leaf{
+    position:absolute ;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+}
+.leaf div{
+position:absolute ;
+display:block ;
+}
+.leaf div:nth-child(1){
+    left:20%; 
+    animation:fall 15s linear infinite ;
+    animation-delay:-2s;
+
+}
+.leaf div:nth-child(2){
+    left:70%; 
+    animation:fall 15s linear infinite ;
+    animation-delay:-4s;
+}
+.leaf div:nth-child(3){
+    left:10%; 
+    animation:fall 20s linear infinite ;
+    animation-delay:-7s;
+    
+}
+.leaf div:nth-child(4){
+    left:50%; 
+   animation:fall 18s linear infinite ; 
+   animation-delay:-5s;
+}
+.leaf div:nth-child(5){
+    left:85%; 
+    animation:fall 14s linear infinite ;
+    animation-delay:-5s;
+}
+.leaf div:nth-child(6){
+    left:15%; 
+    animation:fall 16s linear infinite ;
+    animation-delay:-10s;
+}
+.leaf div:nth-child(7){
+    left:90%; 
+    animation:fall 15s linear infinite ;
+    animation-delay:-4s;
+}
+
+@keyframes fall{
+    0%{
+        opacity:1;
+        top:-10%;
+        transform:translateX (20px) rotate(0deg);
+    }
+    20%{
+        opacity:0.8;
+        transform:translateX (-20px) rotate(45deg);
+    }
+    40%{
+
+        transform:translateX (-20px) rotate(90deg);
+    }
+    60%{
+        
+       transform:translateX (-20px) rotate(135deg); 
+    }
+    80%{
+    
+        transform:translateX (-20px) rotate(180deg);
+    }
+    100%{
+        
+        top:110%;
+        transform:translateX (-20px) rotate(225deg);
+    }
+    }
+.leaf1{
+    transform: rotateX(180deg);
+}
+</style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, intial-scale=1">
+  <link rel="stylesheet" type= "text/css" href ="css1.css">
+  </head>
+  <body>
+     
+
+      <nav class="navbar navbar-light bg-success navbar-fixed-top">
+          <div class ="container">
+              <div class ="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle ="collapse" data-target="#myNavbar">
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                  </button>
+                  <a href ="index.html" class ="navbar-brand">Resume</a>
+                 </div>
+              <div class="collapse navbar-collapse" id="myNavbar">
+                  <ul class ="nav navbar-nav navbar-right">
+                      <li><a href="edu.html"><span class="glyphicon glyphicon-education"></span> Education</a></li>
+                       <li><a href="skills.html"><span class="glyphicon glyphicon-certificate"></span> Skills</a></li>
+                    <li><a href="hobbies.html"><span class="glyphicon glyphicon-hourglass"></span> Hobbies</a></li>
+                  </ul>
+          </div>
+           </div>
+      </nav>
+      
+    <div id="banner_image">
+          <section>
+     <div class="leaf">
+     <div>  <img src="1.png" height="75px" width="75px"></img></div>
+      <div><img src="2.png" height="75px" width="75px"></img></div>
+      <div>  <img src="3.png" height="75px" width="75px" ></img></div>
+      <div><img  src="4.png" height="75px" width="75px"></img></div>
+       <div> <img src="5.png" height="75px" width="75px"></img></div>
+     <div>   <img src="6.png" height="75px" width="75px"></div>
+     <div><img src="7.png" height="75px" width="75px"></div>
+            
+     </div>
+     
+     <div class="leaf leaf1">
+    <div>  <img src="1.png" height="75px" width="75px"></img></div>
+      <div><img src="2.png" height="75px" width="75px"></img></div>
+      <div>  <img src="3.png" height="75px" width="75px" ></img></div>
+      <div><img  src="4.png" height="75px" width="75px"></img></div>
+       <div> <img src="5.png" height="75px" width="75px"></img></div>
+     <div>   <img src="6.png" height="75px" width="75px"></div>
+     <div><img src="7.png" height="75px" width="75px"></div>
+     </div>
+     
+     <div class="leaf leaf2">
+   
+          <div>  <img src="1.png" height="75px" width="75px"></img></div>
+      <div><img src="2.png" height="75px" width="75px"></img></div>
+      <div>  <img src="3.png" height="75px" width="75px" ></img></div>
+      <div><img  src="4.png" height="75px" width="75px"></img></div>
+       <div> <img src="5.png" height="75px" width="75px"></img></div>
+     <div>   <img src="6.png" height="75px" width="75px"></div>
+     <div><img src="7.png" height="75px" width="75px"></div>  
+     </div>
+     </section>
+       <center>
+                <div class ="container">
+                    <div id="banner_content">
+                <h1> To download resume</h1>
+                <p> Click the below button <p>
+                    <a href ="resume.pdf" class ="”btn btn-danger btn-lg active"><span class="glyphicon glyphicon-download"></span> Download</a>
+                 </div>
+                </div>
+        </center>
+                </div>
+      <div class ="container">
+          <div class ="row">
+              <div class ="col-sm-4 ">
+                  <a href ="edu.html" class ="thumbnail">
+                      <img src ="edu.jpeg" alt="responsive image">
+                      <div class="caption"><center>
+                          <h3>Education</h3></center>
+                      </div>
+                  </a>
+              </div>  
+              <div class ="col-sm-4">
+                  <a href ="Skills.html" class ="thumbnail">
+                      <img src ="skills.jpeg" alt="responsive image">
+                      <div class="caption"><center>
+                              <h3>Skills</h3></center>
+                      </div>
+                  </a>
+              </div>  
+               <div class ="col-sm-4 ">
+                  <a href ="hobbies.html" class ="thumbnail">
+                      <img src ="hobbi.jpeg" alt="responsive image">
+                      <div class="caption">
+                          <center>
+                          <h3>Hobbies</h3>
+                          </center>
+                      </div>
+                  </a>
+              </div>
+          </div>
+      </div>
+   <footer >
+      <div class="container">
+       <div class ="row">
+           <div class ="col-sm-3"></div>
+           <div class ="col-sm-2 x">
+               <h2 style="color:orange">you are </h2>
+           </div>
+           <div class="col-sm-1 z">
+   <div id="sfc3x3ef2squz68dgarfdrwf3n883w2c44t"></div>
+<script type="text/javascript" src="https://counter7.stat.ovh/private/counter.js?c=3x3ef2squz68dgarfdrwf3n883w2c44t&down=async" async></script>
+<noscript><a href="https://www.freecounterstat.com" title="page counter"><img src="https://counter7.stat.ovh/private/freecounterstat.php?c=3x3ef2squz68dgarfdrwf3n883w2c44t" border="0" title="page counter" alt="page counter"></a></noscript>
+      </div>
+    <div class ="col-sm-3 y">
+               <h2 style="color:orange">visitor</h2>
+           </div>
+       
+       </div>  </div>
+  </footer>
+ </body>
+     
+  
+</html>
